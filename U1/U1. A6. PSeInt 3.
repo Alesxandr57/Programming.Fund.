@@ -1,0 +1,61 @@
+Realiza un pseudocódigo que calcule el promedio de un alumno, el usuario ingresará su nombre y edad, después deberá ingresar sus 3 instrumentos, examen que vale el 30%, tareas que vale el 20% y trabajos en clase que vale el 50%, deberá calcular el promedio final.
+
+Usando operadores, deberá validar si el alumno aprobó con una calificación igual o mayor a 6.
+
+La respuesta debe mostrar el nombre del alumno, su edad, y el valor de cada instrumento, su promedio final, y mostrar si el alumno aprobó con un Verdadero o Falso.
+
+Algoritmo ReporteCalificaciones1
+  Definir VerificacionAprobatoria Como Logico
+	
+	//ingreso de datos
+	Escribir "Ingresa tu Nombre:"
+	Leer Nombre
+	Escribir "Ingresa tu Edad:"
+	Leer Edad
+    Escribir "Ingresa de 0 al 10 tu calificacion de Examen:"
+	Leer Examen
+	Escribir "Ingresa del 0 al 10 tu calificacion de Tareas:"
+	Leer Tareas
+	Escribir "Ingresa del 0 al 10 tu calificacion de Trabajos en Clases:"
+	Leer TrabajoEnClase
+	
+	//Calculos
+	R1 = Examen * .30
+	R2 = Tareas * .20
+	R3 = TrabajoEnClase * .50
+	Promedio = (R1 + R2 + R3)
+	VerificacionAprobatoria = (Promedio > 5)
+	
+	//Mostrar Datos
+	Escribir "Estos son tus resultados:"
+	Escribir "Nombre: ", Nombre
+	Escribir "Edad: ", Edad
+	Escribir "Calificacion Examen: ", R1, " (30%)"
+	Escribir "Califacion Tareas: ", R2, " (20%)"
+	Escribir "Calificacion Trabajos en clase: ", R3, " (50%)"
+	Escribir "Promedio: ", Promedio
+	Escribir "Usted esta: ", VerificacionAprobatoria
+	
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingresa tu Nombre:
+> Carlos
+Ingresa tu Edad:
+> 19
+Ingresa de 0 al 10 tu calificacion de Examen:
+> 9
+Ingresa del 0 al 10 tu calificacion de Tareas:
+> 9
+Ingresa del 0 al 10 tu calificacion de Trabajos en Clases:
+> 9
+Estos son tus resultados:
+Nombre: Carlos
+Edad: 19
+Calificacion Examen: 2.7 (30%)
+Califacion Tareas: 1.8 (20%)
+Calificacion Trabajos en clase: 4.5 (50%)
+Promedio: 9
+Usted esta: VERDADERO
+*** Ejecución Finalizada. ***
+
