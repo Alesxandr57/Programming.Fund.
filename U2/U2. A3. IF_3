@@ -1,0 +1,47 @@
+El banco donde trabaja la Lic. Petra, ahora tiene un nuevo sistema para revisar el historial, y permite identificar más rápidamente los datos para un prospecto a crédito.
+
+En el nuevo sistema, ahora solo hay que ingresar la edad del prospecto, sus años trabajados y su ingreso actual y ahora el algoritmo trabajará de la siguiente manera.
+
+Si la edad es mayor a 18, los años mayor a 5 y el ingreso mayor a $5,000.00, deberá mostrar un mensaje que es su crédito será en el rango de los $10,000 a $15,000.
+
+Por otro lado, si la edad es mayor a 35, los años mayor a 10 años y el ingreso mayor a $10,000, deberá mostrar un mensaje que el rango del crédito será de los $25,000 a los $30,000.
+
+Si la edad es mayor a 60, los años mayor a 20 y el ingreso mayor a $20,000, deberá mostrar un mensaje que el rango de crédito será de los $50,000 a los $100,000.
+
+Si alguno de los rangos de edad, años de trabajo o ingreso no coincide, deberá simplemente mostrar un mensaje que necesita contactar a un asesor.
+
+Algoritmo credito
+	
+	Definir Edad, AñosTrabajados, IngresoActual Como Real
+	
+	Escribir "Ingrese su edad:"
+	Leer Edad
+	Escribir "Ingrese sus años trabajados:"
+	Leer AñosTrabajados
+	Escribir "Ingrese su Ingreso Actual"
+	Leer IngresoActual
+	
+	si (Edad > 60 Y AñosTrabajados > 20 Y IngresoActual > 20000) Entonces
+		Escribir "Su rango de credito será de $50,000 a $100,000"
+	SiNo
+		si (Edad > 35 Y AñosTrabajados > 10 Y IngresoActual > 10000) Entonces
+			Escribir "Su rango de credito será de $25,000 a $30,000"
+		SiNo
+			si (Edad > 18 Y AñosTrabajados > 5 Y IngresoActual > 5000) Entonces
+				Escribir "Su rango de credito será de $10,000 a $15,000"
+			SiNo
+				Escribir "Usted necesita contactar con un asesor"
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingrese su edad:
+> 19
+Ingrese sus años trabajados:
+> 5
+Ingrese su Ingreso Actual
+> 150000
+Usted necesita contactar con un asesor
+*** Ejecución Finalizada. **
