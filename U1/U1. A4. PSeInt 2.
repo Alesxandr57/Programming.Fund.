@@ -1,0 +1,21 @@
+Algoritmo Area_Sombreada
+	Escribir "Ingresa el radio del medio circulo:"
+	Leer Radio
+	Escribir "Ingresa la hipotenusa del triangulo:"
+	Leer Hipotenusa
+	
+	//calculos
+	Altura = RAIZ(((Hipotenusa)^2) - ((radio)^2))
+	MitadAreaTriangulo = ((radio * Altura)/2)
+	AreaTrianguloCompleta = (MitadAreaTriangulo*2)
+	CuartoDeCirculo = ((3.1416 * (Radio^2))/4)
+	MedioCirculoCompleto = (CuartoDeCirculo * 2)
+	AreaCompletaFigura = (MedioCirculoCompleto + AreaTrianguloCompleta)
+	CirculoPequeño = (3.1416*((radio/2)^2))
+	MedioCirculoPequeño = CirculoPequeño / 2	
+	AreaNoSombreada = MedioCirculoPequeño + CuartoDeCirculo
+	AreaSombreada = AreaCompletaFigura - AreaNoSombreada
+	
+	//mostrar resultado
+	Escribir "El resultado de la area sombreada es: ", AreaSombreada, " cm²"
+FinAlgoritmo
