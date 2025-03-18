@@ -1,0 +1,98 @@
+El programador sigue teniendo complicaciones para ajustar su código cuando ingresan valores, pero necesita ayuda, ahora su jefe, que no conoce mucho de programación, quiere un programa para calcular los rendimientos de 4 vendedores y ver la diferencia entre estos.
+
+El programa debe recibir los 4 valores de los vendedores, que se calcula en ventas por mes, después, el programa debe ordenarlos de menor a mayor, siendo 4 el mayor y 1 el menor, una vez hecho esto debe hacer las siguientes operaciones.
+
+Mostrar los números ordenados
+El resultado del 4 menos el 1
+El resultado del 2 menos el 1
+El resultado del 4 menos el 3
+El resultado del 3 menos el 2
+La suma de todas las ventas y el promedio general
+
+Algoritmo OrdenarNumeros
+	Definir N1, N2, N3, N4 Como Real
+	Escribir "Ingresa el primer numero:"
+	Leer N1
+	Escribir "Ingresa el segundo numero:"
+	Leer N2
+	Escribir "Ingresa el tercer numero:"
+	Leer N3
+	Escribir "Ingresa el cuarto numero:"
+	Leer N4
+	
+	Nmenor = N1
+	Nmedio1 = N2
+	Nmedio2 = N3
+	Nmayor = N4
+	
+	Si Nmenor > Nmedio1 Entonces
+		a = Nmenor
+		Nmenor = Nmedio1
+		Nmedio1 = a
+	FinSi
+	Si Nmedio1 > Nmedio2 Entonces
+		a = Nmedio1
+		Nmedio1 = Nmedio2
+		Nmedio2 = a
+	FinSi
+	Si Nmedio2 > Nmayor Entonces
+		a = Nmedio2
+		Nmedio2 = Nmayor
+		Nmayor = a
+	FinSi
+	Si Nmenor > Nmedio1 Entonces
+		a = Nmenor
+		Nmenor = Nmedio1
+		Nmedio1 = a
+	FinSi
+	Si Nmedio1 > Nmedio2 Entonces
+		a = Nmedio1
+		Nmedio1 = Nmedio2
+		Nmedio2 = a
+	FinSi
+	Si Nmenor > Nmedio1 Entonces
+		a = Nmenor
+		Nmenor = Nmedio1
+		Nmedio1 = a
+	FinSi
+	
+	//4 - Mayor
+	//3 - Medio2
+	//2 - Medio1
+	//1- Menor
+	
+	//operaciones
+	R1 = Nmayor - Nmenor
+	R2 = Nmedio1 - Nmenor
+	R3 = Nmayor - Nmedio2
+	R4 = Nmedio2 - Nmedio1
+	
+	//operaciones
+	SumaDeLasVentas = R1 + R2 + R3 + R4
+	Promedio = (R1 + R2 + R3 + R4) / 4
+	
+	Escribir "posición 1: ", Nmenor
+	Escribir "posición 2: ", Nmedio1
+	Escribir "posición 3: ", Nmedio2
+	Escribir "posición 4: ", Nmayor
+	Escribir "La suma de las ventas son: ", SumaDeLasVentas
+	Escribir "El promedio general es: ", Promedio
+	
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingresa el primer numero:
+> 9
+Ingresa el segundo numero:
+> 2
+Ingresa el tercer numero:
+> 23
+Ingresa el cuarto numero:
+> 56
+posición 1: 2
+posición 2: 9
+posición 3: 23
+posición 4: 56
+La suma de las ventas son: 108
+El promedio general es: 27
+*** Ejecución Finalizada. **
