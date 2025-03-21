@@ -1,8 +1,12 @@
+௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹
+
 Una primaria necesita un sistema para calcular las calificaciones, pero dependiendo del grado varían las materias y eso genera un trabajo más complejo para poder calcular el promedio de cada alumno correctamente.
 
 La directora quiere que los maestros puedan ingresar el nombre del alumno que van a evaluar, después cuántas materias van a calificar, después, ingresar cada calificación, si el resultado es mayor a 6, deberá mostrar un mensaje que aprobó, si es menor, deberá mostrar un mensaje que necesitará recursamiento y si la calificación es igual a 10, deberá mostrar un mensaje que es un alumno destacado.
 
 Al final, el programa debe mostrar un reporte con el nombre del alumno, su promedio final y el mensaje que dependerá de su calificación.
+
+௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹
 
 Algoritmo CalifiacionesEscuela
 	
@@ -36,6 +40,8 @@ Algoritmo CalifiacionesEscuela
 	
 FinAlgoritmo
 
+௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹
+
 *** Ejecución Iniciada. ***
 Ingresa el nombre del alumno:
 > gabriel
@@ -50,3 +56,4 @@ El nombre del alumno es: gabriel
 El promedio del alumno es: 9.5
 El alumno aprobó
 *** Ejecución Finalizada. ***
+௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹௹
