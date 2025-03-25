@@ -1,0 +1,65 @@
+SubProceso Cubo()
+	Escribir "Ingresa la medida de un lado del cubo"
+	Leer LadoCubo
+	AreaCubo = (LadoCubo * LadoCubo) * 6
+	VolumenCubo = LadoCubo * LadoCubo * LadoCubo
+	Escribir " "
+	Escribir "El Area del cubo es de: ", AreaCubo
+	Escribir "El volumen del cubo es de: ", VolumenCubo
+FinSubProceso
+
+SubProceso PrismaRectangular()
+	Escribir "Ingrese el ancho del prisma"
+	Leer AnchoPrisma
+	Escribir "Ingrese el largo del prisma"
+	Leer LargoPrisma
+	Escribir "Ingrese el Alto del prisma"
+	Leer AltoPrisma
+	AreaPrismaRectangular = 2*((AnchoPrisma * LargoPrisma) + (AnchoPrisma * AltoPrisma) + (LargoPrisma * AltoPrisma))
+	VolumenPrismaRectangular = AnchoPrisma * LargoPrisma * AltoPrisma
+	Escribir " "
+	Escribir "El Area del prisma rectangular es de: ", AreaPrismaRectangular
+	Escribir "El Volumen del prisma rectangular es de: ", VolumenPrismaRectangular
+FinSubProceso
+
+SubProceso Cilindro()
+	Escribir "Ingrese el radio de la base circular"
+	Leer RadioCilindro
+	Escribir "Ingresa la altura del cilindro"
+	Leer AlturaCilindro
+	AreaCilindro = (2 * 3.1416 * (RadioCilindro^2)) + (2 * 3.1416 * RadioCilindro * AlturaCilindro)
+	VolumenCilindro = 3.1416 * (RadioCilindro^2) * AlturaCilindro
+	Escribir " "
+	Escribir "El Area del cilindro es de: ", AreaCilindro
+	Escribir "El Volumen del cilindro es de: ", VolumenCilindro
+FinSubProceso
+
+Algoritmo SubProcesosEjercicios
+	RepetirPrograma = 1
+	mientras RepetirPrograma = 1 Hacer
+	Escribir " "
+	Escribir "----------------------------------------------------------------------"
+	Escribir "Bienvenido al calculador de Areas y Volumenes de figuras"
+	Escribir "----------------------------------------------------------------------"
+	Escribir " "
+	Escribir "Ingresa la figura deseada a resolver de las siguientes 3 opciones"
+	Escribir "Cubo = 1, PrismaRectangular = 2, Cilindro = 3"
+	Leer FiguraDeseada
+	si FiguraDeseada = 1 Entonces
+		Cubo()
+	SiNo
+		si FiguraDeseada = 2 Entonces
+			PrismaRectangular()
+		SiNo
+			Si FiguraDeseada = 3 Entonces
+				Cilindro()
+			FinSi
+		FinSi
+	FinSi
+	Escribir " "
+	Escribir "Desea repetir el programa?"
+	Escribir "Favor de escribir Si = 1, No = 0"
+	Leer RepetirPrograma
+	
+FinMientras
+FinAlgoritmo
